@@ -1,29 +1,31 @@
 import { Header } from '@/components/Header'
+import { Metadata } from 'next'
 import './globals.css'
 import { Noto_Sans, Montserrat, Slackside_One } from  "next/font/google"
 import { Footer } from '@/components/Footer'
 
-const noto = Noto_Sans({
+ const noto = Noto_Sans({
   subsets: ['latin'],
    variable: '--font-noto',
    weight: ['400', '500', '800']
 })
 
-const montserrat = Montserrat({
+ const montserrat = Montserrat({
   subsets: ['latin'],
    variable: '--font-montserrat',
    weight: '800'
 })
 
-const slacksideOne = Slackside_One({
+ const slacksideOne = Slackside_One({
   subsets: ['latin'],
    variable: '--font-slack',
    weight: '400'
 })
 
-export const metadata = {
+export const metadata: Metadata = {
   title: 'Alex Camargo',
   description: 'Portfolio de um desenvolvedor web',
+  
 }
 
 export default function RootLayout({
