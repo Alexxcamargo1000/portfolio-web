@@ -11,7 +11,7 @@ export default function About() {
 
   return (
     <div className="flex-1 flex items-center flex-col my-16 gap-16 max-w-3xl mx-auto">
-      <h1 className="font-montserrat md:text-5xl text-3xl font-bold">
+      <h1 className="animate-fade font-montserrat md:text-5xl text-3xl font-bold">
         Umlabore eu velit duis aliqua
       </h1>
 

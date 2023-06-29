@@ -11,8 +11,18 @@ module.exports = {
         noto: ['var(--font-noto)'],
         montserrat: ['var(--font-montserrat)'],
         slack: ['var(--font-slack)'],
-      }
-    }
+      },
+      keyframes: {
+        fade: {
+          '0%': { opacity: 0 },
+          '100%': { opacity: 1 },
+        },
+      },
+
+      animation: {
+        fade: 'fade 1s ease-in-out',
+      },
+    },
   },
-  plugins: [],
+  plugins: [require('tailwindcss-animated')],
 }
