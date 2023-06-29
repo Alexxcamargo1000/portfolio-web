@@ -3,6 +3,7 @@ import { Header } from '@/components/Header'
 import { Metadata } from 'next'
 import './globals.css'
 import { Noto_Sans, Montserrat, Slackside_One } from 'next/font/google'
+
 import { Footer } from '@/components/Footer'
 import { ReactNode } from 'react'
 import { MobileHeader } from '@/components/MobileHeader'

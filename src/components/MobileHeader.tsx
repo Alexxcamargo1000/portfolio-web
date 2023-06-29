@@ -1,23 +1,25 @@
 'use client'
-import { Github, Linkedin, Instagram, Menu, X } from 'lucide-react'
-
-import { motion } from 'framer-motion'
+import {
+  Github,
+  Linkedin,
+  Instagram,
+  Menu,
+  X,
+  Home,
+  User2,
+  Folder,
+} from 'lucide-react'
+import clsx from 'clsx'
 import { useState } from 'react'
 import Link from 'next/link'
 
-const LinkMotion = motion(Link)
-
 export function MobileHeader() {
   const [isOpen, setIsOpen] = useState(false)
-  const menuVariants = {
-    hidden: { height: 0, width: 0, display: 'none' },
-    visible: { height: 'initial', width: '50%', display: 'block' },
-  }
 
   return (
     <div className="relative md:hidden flex px-8 py-8 justify-between border-b border-b-neutral-900">
       <div>
-        <motion.nav layout className="flex">
+        <nav className="flex">
           <button
             className="cursor-pointer w-full h-full"
             onClick={() => setIsOpen(!isOpen)}
@@ -29,34 +31,39 @@ export function MobileHeader() {
             )}
           </button>
 
-          <motion.div
-            animate={isOpen ? 'visible' : 'hidden'}
-            variants={menuVariants}
-            className="w-1/2 bg-neutral-800  text-center absolute mt-9 rounded divide-y-2 divide-neutral-900"
+          <div
+            className={clsx(
+              'w-1/2 bg-neutral-800 text-center absolute z-10 mt-9 rounded divide-y-2 divide-neutral-900',
+              !isOpen && 'hidden ',
+              isOpen && 'animate-fade-down ',
+            )}
           >
-            <LinkMotion
+            <Link
               onClick={() => setIsOpen(false)}
               href="/"
-              className="flex items-center cursor-pointer justify-center p-3"
+              className="flex items-center cursor-pointer gap-2 justify-center p-3"
             >
-              Home
-            </LinkMotion>
-            <LinkMotion
+              <Home size={16} />
+              <span>Home</span>
+            </Link>
+            <Link
               onClick={() => setIsOpen(false)}
               href="/about"
-              className="flex items-center cursor-pointer justify-center p-3"
+              className="flex items-center cursor-pointer gap-2 justify-center p-3"
             >
+              <User2 size={16} />
               About
-            </LinkMotion>
-            <LinkMotion
+            </Link>
+            <Link
               onClick={() => setIsOpen(false)}
               href="/portfolio"
-              className="flex items-center cursor-pointer justify-center p-3"
+              className="flex items-center cursor-pointer gap-2 justify-center p-3"
             >
+              <Folder size={16} />
               Portfolio
-            </LinkMotion>
-          </motion.div>
-        </motion.nav>
+            </Link>
+          </div>
+        </nav>
       </div>
 
       <div className="flex items-center gap-4">
