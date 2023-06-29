@@ -5,6 +5,7 @@ import './globals.css'
 import { Noto_Sans, Montserrat, Slackside_One } from 'next/font/google'
 import { Footer } from '@/components/Footer'
 import { ReactNode } from 'react'
+import { MobileHeader } from '@/components/MobileHeader'
 
 const noto = Noto_Sans({
   subsets: ['latin'],
@@ -36,7 +37,10 @@ export default function RootLayout({ children }: { children: ReactNode }) {
       className={`${slacksideOne.variable} ${montserrat.variable} ${noto.variable} `}
     >
       <body className="font-noto bg-neutral-950 text-neutral-50 flex flex-col min-h-screen">
+        <MobileHeader />
+
         <Header />
+
         <div className="flex-1 px-4 flex">{children}</div>
         <Footer />
       </body>

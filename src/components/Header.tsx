@@ -3,7 +3,7 @@ import Link from 'next/link'
 
 export function Header() {
   return (
-    <div className="px-8 py-8 flex justify-between border-b border-b-neutral-900 sm:px-32">
+    <div className="md:flex hidden px-8 py-8 justify-between border-b border-b-neutral-900 sm:px-32">
       <nav className="space-x-4">
         <Link
           href="/"
