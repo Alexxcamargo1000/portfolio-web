@@ -34,14 +34,12 @@ export const metadata: Metadata = {
 export default function RootLayout({ children }: { children: ReactNode }) {
   return (
     <html
-      lang="en"
+      lang="pt-br"
       className={`${slacksideOne.variable} ${montserrat.variable} ${noto.variable} `}
     >
       <body className="font-noto bg-neutral-950 text-neutral-50 flex flex-col min-h-screen">
         <MobileHeader />
-
         <Header />
-
         <div className="flex-1 px-4 flex">{children}</div>
         <Footer />
       </body>

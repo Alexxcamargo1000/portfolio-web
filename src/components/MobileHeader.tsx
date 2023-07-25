@@ -1,17 +1,9 @@
 'use client'
-import {
-  Github,
-  Linkedin,
-  Instagram,
-  Menu,
-  X,
-  Home,
-  User2,
-  Folder,
-} from 'lucide-react'
+import { Menu, X, Home, User2, Folder } from 'lucide-react'
 import clsx from 'clsx'
 import { useState } from 'react'
 import Link from 'next/link'
+import { SocialMedia } from './SocialMedia'
 
 export function MobileHeader() {
   const [isOpen, setIsOpen] = useState(false)
@@ -24,11 +16,7 @@ export function MobileHeader() {
             className="cursor-pointer w-full h-full"
             onClick={() => setIsOpen(!isOpen)}
           >
-            {isOpen ? (
-              <X size={24} className="" />
-            ) : (
-              <Menu size={24} className="" />
-            )}
+            {isOpen ? <X size={24} /> : <Menu size={24} />}
           </button>
 
           <div
@@ -66,17 +54,7 @@ export function MobileHeader() {
         </nav>
       </div>
 
-      <div className="flex items-center gap-4">
-        <a href="" className="hover:text-cyan-600 transition-colors">
-          <Github size={24} />
-        </a>
-        <a href="" className="hover:text-cyan-600 transition-colors">
-          <Linkedin size={24} />
-        </a>
-        <a href="" className="hover:text-cyan-600 transition-colors">
-          <Instagram size={24} />
-        </a>
-      </div>
+      <SocialMedia />
     </div>
   )
 }

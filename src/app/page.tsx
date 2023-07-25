@@ -1,5 +1,5 @@
 import Link from 'next/link'
-import { Download } from 'lucide-react'
+import { ButtonDownload } from '@/components/ButtonDownload'
 
 export default function Home() {
   return (
@@ -25,10 +25,7 @@ export default function Home() {
         </p>
 
         <div className="flex gap-6 flex-wrap items-center justify-center md:justify-normal">
-          <button className="hover:animate-stop animate-wiggle animate-infinite animate-ease-in md:w-fit w-full px-4 py-3 bg-cyan-600 flex items-center justify-center gap-2 rounded-md hover:bg-cyan-800 transition-colors">
-            Resume
-            <Download />
-          </button>
+          <ButtonDownload />
           <Link
             href="/"
             className="underline leading-relaxed hover:text-neutral-400 transition-colors"

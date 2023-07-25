@@ -1,6 +1,5 @@
-import { Github, Linkedin, Instagram } from 'lucide-react'
-
 import Link from 'next/link'
+import { SocialMedia } from './SocialMedia'
 
 export function Header() {
   return (
@@ -26,17 +25,7 @@ export function Header() {
         </Link>
       </nav>
 
-      <div className="flex items-center gap-4">
-        <a href="" className="hover:text-cyan-600 transition-colors">
-          <Github size={24} />
-        </a>
-        <a href="" className="hover:text-cyan-600 transition-colors">
-          <Linkedin size={24} />
-        </a>
-        <a href="" className="hover:text-cyan-600 transition-colors">
-          <Instagram size={24} />
-        </a>
-      </div>
+      <SocialMedia />
     </div>
   )
 }
