@@ -37,11 +37,13 @@ export default function RootLayout({ children }: { children: ReactNode }) {
       lang="pt-br"
       className={`${slacksideOne.variable} ${montserrat.variable} ${noto.variable} `}
     >
-      <body className="font-noto bg-neutral-950 text-neutral-50 flex flex-col min-h-screen">
-        <MobileHeader />
-        <Header />
-        <div className="flex-1 px-4 flex">{children}</div>
-        <Footer />
+      <body className="font-noto bg-neutral-950 text-neutral-50 flex justify-center ">
+        <div className="flex flex-col min-h-screen w-full">
+          <MobileHeader />
+          <Header />
+          <div className="flex-1 px-4 flex">{children}</div>
+          <Footer />
+        </div>
       </body>
     </html>
   )

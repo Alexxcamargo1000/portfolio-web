@@ -1,23 +1,17 @@
-'use client'
 import { Download } from 'lucide-react'
-import { ButtonHTMLAttributes } from 'react'
+import Link from 'next/link'
 
-export interface ButtonDownloadProps
-  extends ButtonHTMLAttributes<HTMLButtonElement> {}
-
-export function ButtonDownload(props: ButtonDownloadProps) {
-  function handleDownload() {
-    window.open('/resume.pdf', '_blank')
-  }
-
+export function ButtonDownload() {
   return (
-    <button
-      {...props}
-      onClick={handleDownload}
-      className="hover:animate-stop animate-wiggle animate-infinite animate-ease-in md:w-fit w-full px-4 py-3 bg-cyan-600 flex items-center justify-center gap-2 rounded-md hover:bg-cyan-800 transition-colors"
+    <Link
+      target="_blank"
+      download="Resume Alex   Camargo"
+      title="Baixar currículo"
+      href="/resume.pdf"
+      className="md:w-fit w-full px-4 py-3 bg-cyan-600 flex items-center justify-center gap-2 rounded-md hover:bg-cyan-800 transition-colors"
     >
       Resume
       <Download />
-    </button>
+    </Link>
   )
 }
