@@ -6,40 +6,51 @@ import clsx from 'clsx'
 
 import type { Skill } from '@/components/Radar'
 
-export default function About() {
+export default function SkillPage() {
   const [skill, setSkill] = useState<Skill>('HTML')
 
   return (
     <div className="flex-1 flex items-center flex-col my-16 gap-16 max-w-3xl mx-auto">
       <h1 className="animate-fade font-montserrat md:text-5xl text-3xl font-bold">
-        Umlabore eu velit duis aliqua
+        Minhas habilidades
       </h1>
 
-      <div className="flex items-center flex-col gap-6 max-w-2xl p-4 md:p-0">
+      <div className="flex items-center leading-relaxed flex-col gap-6 max-w-2xl p-4 md:p-0">
         <h2 className="text-2xl font-montserrat font-bold text-neutral-800">
-          BIOGRAPHY
+          Um resumo
         </h2>
-        <p className=" text-justify">
-          Consectetur consequat amet eiusmod occaecat. Reprehenderit adipisicing
-          proident adipisicing officia nostrud aute incididunt fugiat voluptate
-          amet mollit. Non exercitation cillum occaecat aliqua nulla ea ullamco
-          ea voluptate exercitation duis quis enim ex occaecat. Nisi
-          reprehenderit nulla est officia minim excepteur in dolor anim eiusmod
-          mollit est laborum sint qui.
+        <p className=" ">
+          Como desenvolvedor front-end, possuo habilidades sólidas em HTML, CSS
+          e JavaScript, o que me permite transformar conceitos de design em
+          interfaces web interativas e visualmente atraentes. Minha experiência
+          e conhecimento em TypeScript, Node.js e Next.js me capacitam a criar
+          aplicações web complexas, escaláveis e seguras.
         </p>
-        <p className="text-justify">
-          Consectetur consequat amet eiusmod occaecat. Reprehenderit adipisicing
-          proident adipisicing officia nostrud aute incididunt fugiat voluptate
-          amet mollit. Non exercitation cillum occaecat aliqua nulla ea ullamco
-          ea voluptate exercitation duis quis enim ex occaecat. Nisi
-          reprehenderit nulla est officia minim excepteur in dolor anim eiusmod
-          mollit est laborum sint qui.
+        <p className="">
+          Ao utilizar TypeScript, sinto-me confiante em desenvolver código bem
+          estruturado e tipado, aumentando a manutenibilidade e a segurança das
+          minhas aplicações. Além disso, o uso do Node.js me permite construir
+          aplicações do lado do servidor, fornecendo funcionalidades avançadas e
+          em tempo real.
+        </p>
+        <p className="">
+          Com o Next.js, posso explorar todo o potencial do React de forma
+          otimizada, desenvolvendo aplicações de alto desempenho e amigáveis
+          para SEO. Essa combinação de tecnologias modernas me torna um
+          profissional valorizado na indústria, capaz de enfrentar desafios e
+          entregar soluções inovadoras para projetos web.
         </p>
 
-        <div className="w-60 h-60 bg-neutral-900 rounded-lg" />
+        <p className="">
+          Com o Next.js, posso explorar todo o potencial do React de forma
+          otimizada, desenvolvendo aplicações de alto desempenho e amigáveis
+          para SEO. Essa combinação de tecnologias modernas me torna um
+          profissional valorizado na indústria, capaz de enfrentar desafios e
+          entregar soluções inovadoras para projetos web.
+        </p>
       </div>
 
-      <div className="flex flex-col items-center ">
+      <div className="flex flex-col items-center">
         <h2 className="text-2xl font-montserrat font-bold text-neutral-800">
           Skills
         </h2>

@@ -13,10 +13,10 @@ export function Header() {
             Home
           </Link>
           <Link
-            href="/about"
+            href="/skill"
             className="font-slack text-2xl hover:text-cyan-600 transition-colors"
           >
-            About
+            Skill
           </Link>
           <Link
             href="/portfolio"

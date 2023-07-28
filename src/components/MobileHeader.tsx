@@ -1,5 +1,5 @@
 'use client'
-import { Menu, X, Home, User2, Folder } from 'lucide-react'
+import { Menu, X, Home, Folder, GraduationCap } from 'lucide-react'
 import clsx from 'clsx'
 import { useState } from 'react'
 import Link from 'next/link'
@@ -36,11 +36,11 @@ export function MobileHeader() {
             </Link>
             <Link
               onClick={() => setIsOpen(false)}
-              href="/about"
+              href="/skill"
               className="flex items-center cursor-pointer gap-2 justify-center p-3"
             >
-              <User2 size={16} />
-              About
+              <GraduationCap size={16} />
+              Skill
             </Link>
             <Link
               onClick={() => setIsOpen(false)}
