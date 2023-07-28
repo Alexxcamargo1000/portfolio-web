@@ -2,7 +2,7 @@ import { ComponentProps } from 'react'
 import { tv, type VariantProps } from 'tailwind-variants'
 
 const tagVariants = tv({
-  base: 'bg-neutral-300 text-neutral-950  rounded-full animate-fade',
+  base: 'rounded-full animate-fade font-medium',
   variants: {
     size: {
       xs: 'px-1 text-xs',
