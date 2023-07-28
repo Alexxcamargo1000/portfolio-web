@@ -11,10 +11,10 @@ export function CardProject({ project }: CardProps) {
   return (
     <Link
       href={`/portfolio/${project.id}`}
-      className="h-60 rounded-lg shadow-sm group overflow-hidden shadow-neutral-800 relative "
+      className="h-60 rounded-lg shadow-sm group overflow-hidden  shadow-neutral-800 relative "
     >
       <Image
-        className="w-full h-full object-cover blur-sm group-hover:blur-none group-hover:scale-125 transition-all"
+        className="w-full h-full object-cover blur-sm brightness-50 group-hover:brightness-100 group-hover:blur-none group-hover:scale-125 transition-all"
         alt={project.name}
         src={project.image}
         width={600}
