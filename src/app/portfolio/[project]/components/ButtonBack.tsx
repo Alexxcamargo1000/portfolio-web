@@ -3,12 +3,10 @@ import { ArrowLeft } from 'lucide-react'
 
 import { useRouter } from 'next/navigation'
 
-export interface ButtonBackProps {}
-
-export function ButtonBack(props: ButtonBackProps) {
+export function ButtonBack() {
   const router = useRouter()
   function handleBack() {
-    router.back()
+    router.push('/portfolio')
   }
   return (
     <button

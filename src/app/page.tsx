@@ -11,17 +11,18 @@ export default function Home() {
         <div className="w-96 h-96 animate-fade-left bg-neutral-900" />
       </div>
 
-      <div className="max-w-lg space-y-8">
-        <h1 className="md:not-sr-only sr-only animate-fade-left font-montserrat text-5xl">
-          Alex Camargo de Oliveira
-        </h1>
+      <div className="max-w-lg space-y-6">
+        <div>
+          <h1 className="md:not-sr-only leading-tight sr-only animate-fade-left font-montserrat text-5xl">
+            Alex Camargo de Oliveira
+          </h1>
+          <h2 className="text-neutral-500 text-lg font-black">Developer</h2>
+        </div>
         <p className="leading-relaxed text-base text-neutral-100 font-normal">
           Sou especializado em desenvolvimento front-end de aplicações web,
           utilizando as linguagens de programação JavaScript, HTML, CSS e
           ReactJS. Tenho experiência em raciocínio lógico e sou flexível para
-          lidar com inovações na área da tecnologia. Além disso, também utilizo
-          TypeScript e Node.js em meus projetos para garantir uma base sólida e
-          eficiente no desenvolvimento de aplicações web.
+          lidar com inovações na área da tecnologia.
         </p>
 
         <div className="flex gap-6 flex-wrap items-center justify-center md:justify-normal">
