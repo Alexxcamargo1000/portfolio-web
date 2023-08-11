@@ -30,7 +30,8 @@ export function ContactDialog(props: ContactDialogProps) {
               <Link
                 href="mailto:alexxcamargo1000@gmail.com"
                 target="_blank"
-                className="flex items-center gap-2 underline hover:opacity-90"
+                className="flex items-center
+                 gap-2 underline hover:opacity-90"
               >
                 <Mail className="text-red-600 " /> Gmail
               </Link>
