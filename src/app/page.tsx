@@ -1,5 +1,5 @@
-import Link from 'next/link'
 import { ButtonDownload } from '@/components/ButtonDownload'
+import { ContactDialog } from '@/components/ContactDialog'
 
 export default function Home() {
   return (
@@ -27,12 +27,7 @@ export default function Home() {
 
         <div className="flex gap-6 flex-wrap items-center justify-center md:justify-normal">
           <ButtonDownload />
-          <Link
-            href="/"
-            className="underline leading-relaxed hover:text-neutral-400 transition-colors"
-          >
-            Contact
-          </Link>
+          <ContactDialog />
         </div>
       </div>
     </main>

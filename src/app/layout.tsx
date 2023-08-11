@@ -35,7 +35,7 @@ export default function RootLayout({ children }: { children: ReactNode }) {
   return (
     <html
       lang="pt-br"
-      className={`${slacksideOne.variable} ${montserrat.variable} ${noto.variable} `}
+      className={`${slacksideOne.variable} ${montserrat.variable} ${noto.variable} antialiased`}
     >
       <body className="font-noto bg-neutral-950 text-neutral-50 flex justify-center ">
         <div className="flex flex-col min-h-screen w-full">
