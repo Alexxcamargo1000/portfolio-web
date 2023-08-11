@@ -1,7 +1,7 @@
 import Image from 'next/image'
 import Link from 'next/link'
 import { Tag } from './Tag'
-import { projectProps } from '@/app/api/data/route'
+import { projectProps } from '@/actions/getAllProjects'
 
 interface CardProps {
   project: projectProps
