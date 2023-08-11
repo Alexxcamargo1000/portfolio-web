@@ -1,7 +1,7 @@
 'use client'
 import * as Dialog from '@radix-ui/react-dialog'
 import { Mail, X } from 'lucide-react'
-import { WhatsApp } from './Whatsapp'
+import { WhatsApp } from './WhatsApp'
 import Link from 'next/link'
 
 export interface ContactDialogProps {}
@@ -14,7 +14,7 @@ export function ContactDialog(props: ContactDialogProps) {
       </Dialog.Trigger>
       <Dialog.Portal>
         <Dialog.Overlay className="bg-neutral-950/50 backdrop-blur-sm data-[state=open]:animate-overlayShow fixed inset-0" />
-        <Dialog.Content className="data-[state=open]:animate-contentShow fixed top-[50%] left-[50%]  max-h-[85vh] w-[90vw] max-w-[450px] translate-x-[-50%] translate-y-[-50%] rounded-md text-neutral-50  bg-neutral-950 p-6 shadow shadow-neutral-900 focus:outline-none">
+        <Dialog.Content className="data-[state=open]:animate-contentShow fixed top-[50%] left-[50%] h-36  max-h-[85vh] w-[90vw] max-w-[450px] translate-x-[-50%] translate-y-[-50%] rounded-md text-neutral-50  bg-neutral-950 p-8 shadow shadow-neutral-900 focus:outline-none">
           <Dialog.Title className="text-xl font-medium font-montserrat">
             Entre em contato comigo
           </Dialog.Title>

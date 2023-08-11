@@ -1,5 +1,6 @@
 import { ButtonDownload } from '@/components/ButtonDownload'
 import { ContactDialog } from '@/components/ContactDialog'
+import Image from 'next/image'
 
 export default function Home() {
   return (
@@ -8,7 +9,16 @@ export default function Home() {
         <h1 className=" md:sr-only animate-fade-left font-montserrat text-xl">
           Alex Camargo de Oliveira
         </h1>
-        <div className="w-96 h-96 animate-fade-left bg-neutral-900" />
+        <div className="w-96 h-96 animate-fade-left">
+          <Image
+            src="/eu/alex-camargo.png"
+            alt="Imagem Alex Camargo"
+            width={384}
+            height={384}
+            quality={100}
+            className="rounded "
+          />
+        </div>
       </div>
 
       <div className="max-w-lg space-y-6">
