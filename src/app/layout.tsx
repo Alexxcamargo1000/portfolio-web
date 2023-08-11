@@ -2,7 +2,7 @@
 import { Header } from '@/components/Header'
 import { Metadata } from 'next'
 import './globals.css'
-import { Noto_Sans, Montserrat, Slackside_One } from 'next/font/google'
+import { Noto_Sans, Montserrat, Alegreya_SC } from 'next/font/google'
 
 import { Footer } from '@/components/Footer'
 import { ReactNode } from 'react'
@@ -20,7 +20,7 @@ const montserrat = Montserrat({
   weight: '800',
 })
 
-const slacksideOne = Slackside_One({
+const slacksideOne = Alegreya_SC({
   subsets: ['latin'],
   variable: '--font-slack',
   weight: '400',
