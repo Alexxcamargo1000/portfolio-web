@@ -1,5 +1,3 @@
-// import { projectProps } from '@/app/api/data/route'
-// import { api } from '@/lib/api'
 import data from '../../data.json'
 
 export interface projectProps {
