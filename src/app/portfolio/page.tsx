@@ -1,8 +1,8 @@
 import { getAllProjects } from '@/actions/getAllProjects'
 import { CardProject } from '@/components/CardProject'
 
-export default async function Portfolio() {
-  const projects = await getAllProjects()
+export default function Portfolio() {
+  const projects = getAllProjects()
 
   return (
     <div className="flex flex-1 justify-center">

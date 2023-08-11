@@ -9,7 +9,7 @@ export interface previewProps {
 }
 
 export default async function Preview({ params }: previewProps) {
-  const project = await getProjectById(Number(params.project))
+  const project = getProjectById(Number(params.project))
 
   return (
     <div className="mt-10 w-full max-w-7xl mx-auto">

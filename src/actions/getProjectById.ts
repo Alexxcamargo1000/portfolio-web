@@ -1,8 +1,13 @@
-import { projectProps } from '@/app/api/data/route'
-import { api } from '@/lib/api'
+// import { projectProps } from '@/app/api/data/route'
+// import { api } from '@/lib/api'
+import { getAllProjects } from './getAllProjects'
 
-export async function getProjectById(id: number) {
-  const project: projectProps = await (await api(`/data/${id}`)).data
+export function getProjectById(id: number) {
+  const projects = getAllProjects()
+
+  const project = projects.find((project) => project.id === id)
+
+  if (!project) throw new Error('Project not found')
 
   return project
 }

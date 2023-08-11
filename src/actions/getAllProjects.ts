@@ -1,8 +1,18 @@
-import { projectProps } from '@/app/api/data/route'
-import { api } from '@/lib/api'
+// import { projectProps } from '@/app/api/data/route'
+// import { api } from '@/lib/api'
+import data from '../../data.json'
 
-export async function getAllProjects() {
-  const project: projectProps[] = await (await api(`/data`)).data
+export interface projectProps {
+  id: number
+  name: string
+  description: string
+  image: string
+  gitUrl?: string
+  deployUrl?: string
+  tags: string[]
+}
+export function getAllProjects() {
+  const project: projectProps[] = data
 
   return project
 }
